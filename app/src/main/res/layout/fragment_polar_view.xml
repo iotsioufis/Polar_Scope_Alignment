@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="60dp"
+    >
+
+
+    <TextView
+        android:id="@+id/text_polar_alignment_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hour Angle of Polaris :"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintTop_toBottomOf="@+id/text_long_lat" />
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp"
+        android:id="@+id/text_using_polar_scope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location :"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_long_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Latitude    : 00:00:00\n Longitude : 00:00:00 "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintTop_toBottomOf="@+id/text_using_polar_scope" />
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="13sp"
+        android:id="@+id/text_polaris_ha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="00:00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintTop_toBottomOf="@+id/text_polar_alignment_info"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:scaleX="0.9"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/text_polaris_ha"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/ic_polarclock"
+        android:layout_width="282dp"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:layout_height="281dp"
+        android:layout_marginTop="227dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_using_polar_scope"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/outer_circle"
+        android:background="@drawable/circle"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="223dp"
+        android:rotation="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_using_polar_scope">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/ic_crosshair_polaris"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationY="-1dp"
+            android:elevation="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/outer_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/text_position_in_scope_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position in the Polar scope :"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="13sp"
+        android:id="@+id/text_position_in_scope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="00:00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorSecondaryVariant"
+        app:layout_constraintTop_toBottomOf="@+id/text_position_in_scope_info"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_polar_view">
+
+    <fragment
+        android:id="@+id/navigation_polar_view"
+        android:name="com.example.polarscopealignment.ui.polarview.PolarViewFragment"
+        android:label="@string/title_polar_view"
+        tools:layout="@layout/fragment_polar_view" />
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.example.polarscopealignment.ui.location.LocationFragment"
+        android:label="@string/title_location"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.polarscopealignment.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

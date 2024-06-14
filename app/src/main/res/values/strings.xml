@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Polar Scope Alignment</string>
+    <string name="title_polar_view">Polar Scope View</string>
+    <string name="title_location">Location</string>
+    <string name="title_settings">Settings</string>
+    <string-array name="latitude_directions">
+        <item>N</item>
+        <item>S</item>
+    </string-array>
+
+    <string-array name="longitude_directions">
+        <item>E</item>
+        <item>W</item>
+    </string-array>
+</resources>
