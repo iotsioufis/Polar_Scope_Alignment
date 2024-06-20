@@ -22,7 +22,7 @@ Polaris is indicated by a yellow dot inside the red crosshair :
   <img alt="Set location manually" src="images/Screenshot_2024-06-19-16-06-42-84_11cf796a06b87252755eebbc9999f113.jpg" width="30%">
 </p>
 3. Aim the mount's polar axis roughly at Polaris. At this step Polaris should be visible inside the polar scope <br />
-4. Use the mount's azimuth and altitude adjustment screws to precisely place Polaris in the exact same spot as indicated in the Polar Scope View screen of the app.<br /><br /><br />
+4. Use the mount's azimuth and altitude adjustment screws to precisely place Polaris in the exact same spot as indicated in the Polar Scope View screen of the app.<br />
 5. Congratulations! You now have a mount ready for astrophotography !<br /><br />
 
 Note : From the app's Settings screen you can select Dark or Light theme mode :<br />
